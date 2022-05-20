@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open" : "cypress open"
+    "cypress:open": "cypress open",
+    "cy:dashboard": "npx cypress run --record --key e049d1ac-0cd6-4196-bca5-33970c0a0316"
   },
   "keywords": [],
   "author": "",

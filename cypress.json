@@ -3,5 +3,6 @@
     "defaultCommandTimeout": 60000,
     "video": false,
     "pageLoadTimeout": 60000,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "projectId": "9uxvaf"
 }

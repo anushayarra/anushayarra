@@ -15,7 +15,7 @@ export class Home extends CypressPageObject {
     }
      
     katanaMainTitleValidation(){
-        this.button("button");
+        cy.get(".MuiIconButton-label").eq(0).click();
         this.getbyText("Welcome to Katana!").should("be.visible");
     }
 

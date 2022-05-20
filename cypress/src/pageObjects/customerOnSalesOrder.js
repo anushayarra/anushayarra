@@ -12,6 +12,7 @@ export class SalesOrder extends CypressPageObject {
    createSalesOrder(userDetails) {
       this.addSalesorder();
       this.usebyTextforCustomer();
+      this.validateByText('Sales order #');
       this.getByDataTestId("address-field-new");
       this.customerBillingAdressData(userDetails);
       this.okButton();

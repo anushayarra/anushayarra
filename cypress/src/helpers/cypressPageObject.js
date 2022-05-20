@@ -38,7 +38,7 @@ export default class CypressPageObject {
   }
 
   getByDataTestId(key) {
-    return cy.get(`[data-testid="${key}"]`).click({ force: true });
+    return cy.get(`[data-testid="${key}"]`).click({ force: true }, { timeout: 5000 });
   }
  
   getByDataTestId2(key) {
@@ -62,7 +62,7 @@ export default class CypressPageObject {
   }
 
   usebyTextforCustomer() {
-    return cy.get('input[type="text"]').eq(0).type('Anusha{enter}', { delay: 500 })
+    return cy.get('input[placeholder="Search or create customer"]').type('Anusha{enter}', { delay: 500 })
   }
 
   usebyTextforTable() {
