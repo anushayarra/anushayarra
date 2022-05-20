@@ -1,0 +1,49 @@
+{
+  "loginValidUserCredentials": {
+    "email": "anushayarra628@gmail.com",
+    "password": "Anusha@405"
+  },
+
+  "loginInValidEmailCredentials": {
+    "email": "anushayarra628@gmail",
+    "password": "Anusha@405"
+  },
+
+  "loginInValidPassowordCredentials": {
+    "email": "anushayarra628@gmail.com",
+    "password": "Anusha@4"
+  },
+
+  "customerDataForNewAddress": {
+    "firstName": "Anusha",
+    "lastName": "Yarra",
+    "comapanyName": "TI",
+    "displayName": "Anu001",
+    "email": "anushayarra628@gmail.com",
+    "phone": "9093903434",
+    "comment": "Text",
+    "addressline1": "Mpp colony",
+    "addressline2": "Sri Archade",
+    "Town": "Hyderabad",
+    "state": "Telangana",
+    "zip": "508399",
+    "country": "India"
+  },
+
+  "customerDataForEditAddress": {
+    "firstName": "Anusha.Y",
+    "lastName": "Yarraa",
+    "comapanyName": "TI",
+    "displayName": "Anu001",
+    "email": "anushayarra628@gmail.com",
+    "phone": "9093903434",
+    "comment": "Text",
+    "addressline1": "RMP Colony",
+    "addressline2": "Mithra Archade",
+    "Town": "Secundrabad",
+    "state": "Telangana",
+    "zip": "508300",
+    "country": "India"
+}
+
+}

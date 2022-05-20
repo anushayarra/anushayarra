@@ -1,0 +1,13 @@
+{
+    "menulinks": {
+        "Sales": "/sales",
+        "Manufacturingorders": "/manufacturingorders",
+        "Purchases": "/purchases",
+        "Inventory": "/inventory",
+        "Products": "/products",
+        "Customers": "/contacts/customers",
+        "Settings": "/settings/general",
+        "Quotes": "/quotes",
+        "Sales1" : "/sales"
+    }
+}
