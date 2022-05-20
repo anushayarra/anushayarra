@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('login', () => {
+Cypress.Commands.add('navigateLogin', () => {
   cy.visit('/login/');
   cy.get('h3').contains("Sign in").should("be.visible");
 });

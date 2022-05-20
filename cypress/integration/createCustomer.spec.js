@@ -13,18 +13,18 @@ describe('Login and Ui Validation', () => {
     });
 
     it('Create - success creation', () => {
-        cy.login();
+        cy.navigateLogin();
         loginPage.successLoginUser(userDetails.loginValidUserCredentials);
         loginPage.getAPiResponseStutusforSales();
     })
 
     it('Login - Error email Validation', () => {
-        cy.login();
+        cy.navigateLogin();
         loginPage.errorEmailValidationforLogin(userDetails.loginInValidEmailCredentials);
     })
 
     it('Login - Error Password Validation', () => {
-        cy.login();
+        cy.navigateLogin();
         loginPage.errorPasswordValidationforLogin(userDetails.loginInValidPassowordCredentials);
     })
 });
@@ -34,7 +34,7 @@ describe('Home Page Validation', () => {
     before(() => {
         cy.fixture('homePage.json').then(data => (menu = data));
         cy.fixture('customerdata.json').then(data => (userDetails = data));
-        cy.login();
+        cy.navigateLogin();
     });
 
     it('Menu List validation', () => {
@@ -53,7 +53,7 @@ describe('Customer Creation', () => {
     let userDetails;
     before(() => {
         cy.fixture('customerdata.json').then(data => (userDetails = data));
-        cy.login();
+        cy.navigateLogin();
 
     });
     it('Create customer - success creation', () => {
@@ -67,7 +67,7 @@ describe('Sales Order Creation', () => {
     let userDetails;
     before(() => {
         cy.fixture('customerdata.json').then(data => (userDetails = data));
-        cy.login();
+        cy.navigateLogin();
 
     });
     it('Create Sales Order - success creation', () => {
@@ -83,7 +83,7 @@ describe('Edit Address', () => {
     let userDetails;
     before(() => {
         cy.fixture('customerdata.json').then(data => (userDetails = data));
-        cy.login();
+        cy.navigateLogin();
 
     });
     it('Edit address for sales order', () => {
